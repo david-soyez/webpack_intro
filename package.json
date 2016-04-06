@@ -1,0 +1,22 @@
+{
+  "name": "exemple1",
+  "version": "1.0.0",
+  "description": "Webpack introduction",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-soyez/webpack_intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-soyez/webpack_intro/issues"
+  },
+  "homepage": "https://github.com/david-soyez/webpack_intro#readme",
+  "devDependencies": {
+    "webpack": "^1.12.14"
+  }
+}
