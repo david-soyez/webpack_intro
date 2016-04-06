@@ -44,29 +44,29 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var monModule = __webpack_require__(1);
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1)], __WEBPACK_AMD_DEFINE_RESULT__ = function (module1) {
+	    document.write(module1.bonjour());
+	    document.write('<br>');
+	    document.write(module1.auRevoir());    
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
-	var module1 = new monModule();
-	document.write(module1.bonjour());
-	document.write('<br>');
-	document.write(module1.auRevoir());
 
 
 /***/ },
 /* 1 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	function monModule() {
-	  this.bonjour = function() {
-	    return 'bonjour!';
-	  }
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
 
-	  this.auRevoir = function() {
-	    return 'au revoir!';
-	  }
-	}
-
-	module.exports = monModule;
+	  return {
+	    bonjour: function() {
+	      return 'bonjour';
+	    },
+	    auRevoir: function() {
+	      return 'au revoir';
+	    }
+	  };
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 
 /***/ }

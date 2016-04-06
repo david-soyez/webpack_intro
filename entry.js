@@ -1,6 +1,6 @@
-var monModule = require('./monModule');
+define(['./monModule'] , function (module1) {
+    document.write(module1.bonjour());
+    document.write('<br>');
+    document.write(module1.auRevoir());    
+});
 
-var module1 = new monModule();
-document.write(module1.bonjour());
-document.write('<br>');
-document.write(module1.auRevoir());

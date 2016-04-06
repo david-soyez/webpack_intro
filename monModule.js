@@ -1,11 +1,11 @@
-function monModule() {
-  this.bonjour = function() {
-    return 'bonjour!';
-  }
+define([], function() {
 
-  this.auRevoir = function() {
-    return 'au revoir!';
-  }
-}
-
-module.exports = monModule;
+  return {
+    bonjour: function() {
+      return 'bonjour';
+    },
+    auRevoir: function() {
+      return 'au revoir';
+    }
+  };
+});
