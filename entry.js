@@ -1,6 +1,6 @@
-define(['./monModule'] , function (module1) {
-    document.write(module1.bonjour());
-    document.write('<br>');
-    document.write(module1.auRevoir());    
+require(['./monModule'] , function (module1) {
+    document.body.innerHTML += module1.bonjour();
+    document.body.innerHTML += '<br>';
+    document.body.innerHTML += module1.auRevoir();
 });
 
