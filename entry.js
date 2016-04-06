@@ -1,3 +1,5 @@
+require("./style.css");
+
 var monModule = require('./monModule');
 
 var module1 = new monModule();
