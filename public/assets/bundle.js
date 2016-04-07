@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/assets/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -46,7 +46,7 @@
 
 	__webpack_require__(1);
 
-	var monModule = __webpack_require__(5);
+	var monModule = __webpack_require__(8);
 
 	var module1 = new monModule();
 	document.write(module1.bonjour());
@@ -64,14 +64,14 @@
 	var content = __webpack_require__(2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./node_modules/css-loader/index.js!./style.css", function() {
-				var newContent = require("!!./node_modules/css-loader/index.js!./style.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -89,7 +89,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n    background: blue;\n    color: white;\n}\n", ""]);
+	exports.push([module.id, "@font-face {\n    font-family: \"Roboto\";\n    src: url(" + __webpack_require__(4) + ");\n}\nbody {\n    background-image: url(" + __webpack_require__(5) + ");\n    color: black;\n}\n.smile {\n    background-image: url(" + __webpack_require__(6) + ");\n    width: 48px;\n    height: 48px;\n    display: block;\n}\n\n", ""]);
 
 	// exports
 
@@ -152,6 +152,24 @@
 
 /***/ },
 /* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a77b7fc4cf040eb5bb26b0685893a9df.ttf";
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "80570b8047fbb418ee02a9d0d08f17b0.png";
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAACbElEQVR4Ae2XQ7scQRSG32tNbBt/4GI7s4+TdczexLbzP2KtZzaxbRuj5bV9nvP0qBXjrV191cWj5g/hP+NZwzEu8IoqqnjJeY6yirF8Bwaymye0ZWiP2MUAPONjB1W02bRKtlGMB2YSpc1hCzMNV2Sxi1batDUQxMDPJHrQg0n4MQjSYBrRyjYcU8wZ2rR9ZQk9SEcPlhA2jTxBkbPd6/TUsZVim81spU7HnyQLW3bp8AjlOKGciH6zHRtm0aomOBynDOeRvsUMa8OMqV0Mww3Diei5S+yvp44y3FKub7GNDAymWoZsxQtb1fUGkJa9iGGq5eRziDBhDpGPklErVqPdSVqeirwEhENqHYdQLLSlaiBpGC9iPT4EkxuFUSy0HurdY0lhjUhB8LwAhKRvNSkcFckAz1cEhvQdIYULIvmtHtJWC8gs50nhlUiT+BYmyywvSaFKpB58Cz1klqofv8CPvyLrR/aKPrKVmbrGwkwtHc1H2CaJbBdH8zlxtPGa4HsgML+rp4WppGMaLV36POtQYRXssrgpS2wmGzPZbJbpb5JlHexSw3XYlOgHcE9637OOMvrSlzLW8V567zEArMK1fcLpxRXaMrQr9HKTcGC3psxyFPJZzqeUyT+xnHwUyqm3S5nQg7im7uGYyWchZ3hPDTW85wwLyfeS9GEObT+ybAHY47rwqnBTeEEWZ12UjiVso95UnWZhD8WcNpfmFsXvUpfFr5LFzqTyPYRBgMn0oAeTCWAQSirft+KSmUR+2A+I3u92J79Q+k6efwIfZ5z8ITsZwHdgHGs4ynleUkUlLzjPEVYxhv/8EbQDfZs2mCDRGyYAAAAASUVORK5CYII="
+
+/***/ },
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -403,12 +421,12 @@
 
 
 /***/ },
-/* 5 */
+/* 8 */
 /***/ function(module, exports) {
 
 	function monModule() {
 	  this.bonjour = function() {
-	    return 'bonjour!';
+	    return '!';
 	  }
 
 	  this.auRevoir = function() {

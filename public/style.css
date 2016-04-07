@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('./Roboto-Black.ttf');
+}
+body {
+    background-image: url(./webpack_logo.png);
+    color: black;
+}
+.smile {
+    background-image: url(./smile.png);
+    width: 48px;
+    height: 48px;
+    display: block;
+}
+
