@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/david-soyez/webpack_intro#readme",
   "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.12.14"
   }
 }
