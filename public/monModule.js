@@ -1,4 +1,5 @@
 function monModule() {
+module.hot.accept();
   this.bonjour = function() {
     return 'bonjour!';
   }
