@@ -1,2 +1,9 @@
 # webpack_intro
-Webpack introduction
+
+Check out the branches for the examples.
+
+French presentations:
+
+http://slides.com/dexnode/module_bundling
+
+http://slides.com/dexnode/webpack
